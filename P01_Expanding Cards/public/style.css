@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-image: url("https://happywall-img-gallery.imgix.net/259/vit_topografisk_karta_display.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+dl {
+    background-color: rgba(100, 100, 100, .95);
+    box-shadow: 1px 1px 10px black;
+    padding: 10px;
+    text-shadow: 1px 1px 2px black;
+}
+
+dt {
+    font-family: Lobster, sans-serif;
+    font-size: 3vw;
+}
+
+dd {
+    font-family: Roboto, sans-serif;
+    font-size: 1.5vw;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    box-shadow: slategrey 4px 5px 8px;
+}
+
+.panel section {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    opacity: 0;
+    border-radius: 0px 0px 50px 50px;
+    transition: opacity 3s ease-in;
+    transition: opacity .5s ease-out;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active section {
+    opacity: 1;
+}
+
+@media(max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+
+    dt {
+        font-size: 8vw;
+    }
+
+    dd {
+        font-size: 4.5vw;
+    }
+}
