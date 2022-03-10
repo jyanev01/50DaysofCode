@@ -47,3 +47,5 @@ const update = () => {
 
 toggleActive = (circle, method) => circle.classList[method]('active');
 // toggleActive button
+
+// toggle button activity
