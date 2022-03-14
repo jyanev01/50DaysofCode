@@ -51,3 +51,5 @@ toggleActive = (circle, method) => circle.classList[method]('active');
 // toggle button activity
 
 // additional code
+
+// i will practice everyday after tax season for 2 hours per day
