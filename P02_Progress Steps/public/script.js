@@ -53,3 +53,5 @@ toggleActive = (circle, method) => circle.classList[method]('active');
 // additional code
 
 // i will practice everyday after tax season for 2 hours per day
+
+// an hour of code a day keeps the debugs away.... :)
