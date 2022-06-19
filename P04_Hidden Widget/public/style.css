@@ -55,7 +55,7 @@ body {
 
 .search.active .btn {
   transform: translateX(198px);
-}
+} 
 
 
 @media (max-width: 480px) {
