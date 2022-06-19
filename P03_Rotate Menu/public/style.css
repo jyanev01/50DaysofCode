@@ -81,7 +81,7 @@ nav ul li + li + li {
 }
 
 .container.show-nav .circle {
-  transform: rotate(-70deg);
+  transform: rotate(-30deg);
 }
 
 .circle button {
